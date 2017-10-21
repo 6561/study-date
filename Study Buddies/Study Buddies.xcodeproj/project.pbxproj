@@ -16,6 +16,7 @@
 		D9F22AEF1F9B4A7E00E93FC6 /* Study_BuddiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F22AEE1F9B4A7E00E93FC6 /* Study_BuddiesUITests.swift */; };
 		D9F22AFE1F9B596400E93FC6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F22AFD1F9B596400E93FC6 /* RegisterViewController.swift */; };
 		D9F22B001F9B5F4D00E93FC6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F22AFF1F9B5F4D00E93FC6 /* ProfileViewController.swift */; };
+		D9F22B021F9B960500E93FC6 /* FirstLoginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F22B011F9B960500E93FC6 /* FirstLoginInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D9F22AF01F9B4A7E00E93FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F22AFD1F9B596400E93FC6 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D9F22AFF1F9B5F4D00E93FC6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D9F22B011F9B960500E93FC6 /* FirstLoginInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,6 @@
 			children = (
 				D9F22AFC1F9B591800E93FC6 /* ViewControllers */,
 				D9F22ACE1F9B4A7E00E93FC6 /* AppDelegate.swift */,
-				D9F22AD01F9B4A7E00E93FC6 /* ViewController.swift */,
 				D9F22AD21F9B4A7E00E93FC6 /* Main.storyboard */,
 				D9F22AD51F9B4A7E00E93FC6 /* Assets.xcassets */,
 				D9F22AD71F9B4A7E00E93FC6 /* LaunchScreen.storyboard */,
@@ -135,6 +136,8 @@
 			children = (
 				D9F22AFD1F9B596400E93FC6 /* RegisterViewController.swift */,
 				D9F22AFF1F9B5F4D00E93FC6 /* ProfileViewController.swift */,
+				D9F22AD01F9B4A7E00E93FC6 /* ViewController.swift */,
+				D9F22B011F9B960500E93FC6 /* FirstLoginInViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				D9F22AD11F9B4A7E00E93FC6 /* ViewController.swift in Sources */,
 				D9F22B001F9B5F4D00E93FC6 /* ProfileViewController.swift in Sources */,
 				D9F22ACF1F9B4A7E00E93FC6 /* AppDelegate.swift in Sources */,
+				D9F22B021F9B960500E93FC6 /* FirstLoginInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

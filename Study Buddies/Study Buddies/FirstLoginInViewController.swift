@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  FirstLoginInViewController.swift
 //  Study Buddies
 //
 //  Created by Jamie Nelson on 10/21/17.
@@ -8,25 +8,12 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-    
-    
-    @IBOutlet weak var profilePicImageView: UIImageView!
+class FirstLoginInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let imageURL = URL(string: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg")!
-        
-        let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
-            if error == nil {
-                let downloadImage = UIImage(data: data!)
-                
-                self.profilePicImageView.image = downloadImage
-            }
-        }
-        
-        task.resume()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
