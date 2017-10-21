@@ -874,7 +874,11 @@
                                 <items>
                                     <navigationItem id="HtS-mP-2TH">
                                         <barButtonItem key="leftBarButtonItem" title="Settings" id="xR5-7P-sJ1"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="67h-cR-YwR"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="67h-cR-YwR">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="Bj3-Ps-Dka"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1056,6 +1060,9 @@
                                 <rect key="frame" x="16" y="28" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to Login"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="sZF-5L-0BM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxp-T5-Spu">
                                 <rect key="frame" x="-2" y="475" width="375" height="30"/>
@@ -1108,6 +1115,9 @@
                                 <rect key="frame" x="16" y="28" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to Login"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="EGE-CG-mV4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1210,6 +1220,7 @@
         <image name="StudyTableIcon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="EGE-CG-mV4"/>
         <segue reference="TqZ-pb-oDK"/>
     </inferredMetricsTieBreakers>
 </document>
