@@ -1,0 +1,375 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	line-height: 1;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+	background-color: #FFFFFF;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+input {
+	-webkit-appearance: none;
+	border-radius: 0;
+	box-sizing: border-box;
+}
+
+input[type=checkbox] {
+	cursor: pointer;
+	-webkit-appearance: checkbox;
+}
+
+input[type=radio] {
+	cursor: pointer;
+	-webkit-appearance: radio;
+}
+
+textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	border: none;
+	resize: none;
+	margin: 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+
+
+
+
+
+#bottom-bar-menu {
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	background: #eeeeee;
+	bottom: 0;
+	z-index: 10;
+	box-shadow: 0 0px 10px 0px #eeeeee;
+}
+
+.bottom-bar-element {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+
+.bottom-bar-element.active {
+	background: #e0e0e0;
+	opacity: 0.8;
+}
+
+.bottom-bar-element-icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin-left: -15px;
+	top: 8px;
+}
+
+.bottom-bar-element-text {
+	position: absolute;
+	width: 100%;
+	height: 22px;
+	bottom: 0;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	color: #000000;
+}
+
+
+
+
+
+#wrapper {
+	position: fixed;
+	width: 100%;
+	height: 90%;
+	background: #F2F6FF;
+	top: 0;
+	z-index: 8;
+}
+
+
+
+
+
+
+.page {
+	display: none;
+}
+
+.page.active {
+	display: block;
+}
+
+#account-page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#account-page-cover {
+	position: relative;
+	width: 100%;
+	height: 33%;
+	background-size: cover; 
+	background-position: center center;
+	border-bottom: 2px solid #8A8A8A;
+	overflow: show;
+}
+
+#account-page-img {
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	top: 70px;
+	left: 50%;
+	margin-left: -85px;
+	border-radius: 85px;
+	border: 4px solid #5B76FF;
+}
+
+#subtitle{
+	position: absolute;
+	width: 100%;
+	height: 65px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 65px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#account-info {
+	position: relative;
+	width: 80%;
+	height: 165px;
+	margin-top: 60px;
+	margin-left: 10%;
+}
+
+.account-info-pfield {
+	position: relative;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color: #A0A0A0;
+}
+
+.account-info-tfield {
+	position: relative;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #4F4F4F;
+}
+
+.account-info-pfield ~ .account-info-pfield {
+	border-top: 2px solid #CFCFCF;
+}
+
+#account-multifield {
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10px;
+	height: auto;
+}
+
+#account-multifield.margin {
+	margin-top: 50px;
+}
+
+.account-multifield-entry {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.account-multifield-entry.light {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.account-multifield-entry-text {
+	float: left;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: #FAFAFA;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.account-multifield-entry-text.settings {
+	font-weight: 500;
+	font-size: 20px;
+	color: #2A2A2A;
+	text-shadow: none;
+}
+
+
+
+
+
+#buddies-page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	background: #F8F8F8;
+}
+
+.buddies-entry {
+	width: 100%;
+	height: 100px;
+	background: #F2F2F2;
+}
+
+.buddies-entry ~ .buddies-entry {
+	border-top: 2px solid #4F4F4F;
+}
+
+.buddies-entry-image {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 40px; 
+	border: 2px solid #055CFF;
+	position: relative;
+}
+
+.buddies-entry-data {
+	float: left;
+	width: 270px;
+	height: 100%;
+	margin-left: 10px;
+	position: relative;
+}
+
+.buddies-entry-data-name {
+	position: relative;
+	width: 100%;
+	height: 30%;
+	box-sizing: border-box;
+	padding: 10px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	color: #4A4A4A;
+}
+
+.buddies-entry-data-pfields {
+	position: relative;
+	width: 100%;
+	height: 70%;
+	box-sizing: border-box;
+	padding: 10px;
+	overflow-x: scroll;
+}
+
+.buddies-entry-data-pfields-strip {
+	width: 1000px;
+}
+
+.buddies-entry-data-pfields-entry {
+	float: left;
+	width: auto;
+	height: 100%;
+	line-height: 36px;
+	box-sizing: border-box;
+	padding: 4px 14px;
+	margin-right: 5px;
+	border-radius: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	color: #FAFAFA;
+	background: #8CB0FF;
+	border: 2px solid #FAFAFA;
+}
