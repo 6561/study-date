@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	
+	<title>StudyDate</title>
+
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,600" rel="stylesheet"> 
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<script>
+
+var pageClick = function(page, elem) {
+	$('.bottom-bar-element').removeClass('active');
+	$(elem).addClass('active')
+	$('.page').removeClass('active');
+	$('.page-' + page).addClass('active');
+}
+
+</script>
+
+<body>
+
+
+<div id="bottom-bar-menu">
+	<div class="bottom-bar-element" onclick="pageClick('account', this)">
+		<img class="bottom-bar-element-icon" src="img/navbar/account_icon.png">
+		<div class="bottom-bar-element-text">ACCOUNT</div>
+	</div>
+	<div class="bottom-bar-element" onclick="pageClick('explore', this)">
+		<img class="bottom-bar-element-icon" src="img/navbar/book_icon.png">
+		<div class="bottom-bar-element-text">EXPLORE</div>
+	</div>
+	<div class="bottom-bar-element active" onclick="pageClick('buddies', this)">
+		<img class="bottom-bar-element-icon" src="img/navbar/buddies_icon.png">
+		<div class="bottom-bar-element-text">BUDDIES</div>
+	</div>
+	<div class="bottom-bar-element" onclick="pageClick('messages', this)">
+		<img class="bottom-bar-element-icon" src="img/navbar/message_icon.png">
+		<div class="bottom-bar-element-text">MESSAGES</div>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div id="account-page" class="page page-account">
+		<div id="account-page-cover" style="background-image: url(img/samples/account_cover.png);">
+			<img id="account-page-img" src="img/samples/account_img.png">
+			<div id="account-page-name">User Name</div>
+		</div>
+
+		<div id="account-info">
+			<div class="account-info-pfield">UNIVERSITY</div>
+			<div class="account-info-tfield">Boston University</div>
+			<div class="account-info-pfield">MAJOR</div>
+			<div class="account-info-tfield">Computer Science</div>
+			<div class="account-info-pfield">GRADUATION YEAR</div>
+			<div class="account-info-tfield">2021</div>
+		</div>
+
+		<div id="account-multifield">
+			<div class="account-multifield-entry">
+				<div class="account-multifield-entry-text">CS111</div>
+			</div>
+
+			<div class="account-multifield-entry">
+				<div class="account-multifield-entry-text">Math 320</div>
+			</div>
+			
+			<div class="account-multifield-entry">
+				<div class="account-multifield-entry-text">ECON102</div>
+			</div>
+
+			<div class="account-multifield-entry">
+				<div class="account-multifield-entry-text">WR150</div>
+			</div>
+
+			<div class="account-multifield-entry light">
+				<div class="account-multifield-entry-text settings" onclick="prompt('Enter class name', '')">ADD CLASS</div>
+			</div>
+		</div>
+
+		<div id="account-multifield" class="margin">
+			<div class="account-multifield-entry light">
+				<div class="account-multifield-entry-text settings">SETTINGS</div>
+			</div>
+
+			<div class="account-multifield-entry light">
+				<div class="account-multifield-entry-text settings">EDIT</div>
+			</div>
+
+			<div class="account-multifield-entry light">
+				<div class="account-multifield-entry-text settings">SIGN OUT</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page page-explore">
+	</div>
+
+	<div id="buddies-page" class="page page-buddies active">
+		<div class="buddies-entry">
+			<img class="buddies-entry-image" src="img/samples/account_img.png">
+			<div class="buddies-entry-data">
+				<div class="buddies-entry-data-name">User Name</div>
+				<div class="buddies-entry-data-pfields">
+					<div class="buddies-entry-data-pfields-strip">
+						<div class="buddies-entry-data-pfields-entry">CS111</div>
+						<div class="buddies-entry-data-pfields-entry">CS131</div>
+						<div class="buddies-entry-data-pfields-entry">EC101</div>
+						<div class="buddies-entry-data-pfields-entry">MATH</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buddies-entry">
+			<img class="buddies-entry-image" src="img/samples/account_img.png">
+			<div class="buddies-entry-data">
+				<div class="buddies-entry-data-name">User Name</div>
+				<div class="buddies-entry-data-pfields">
+					<div class="buddies-entry-data-pfields-strip">
+						<div class="buddies-entry-data-pfields-entry">MA111</div>
+						<div class="buddies-entry-data-pfields-entry">WR131</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page page-messages">
+	</div>
+</div>
+
+
+</body>
+
+</html>
