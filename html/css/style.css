@@ -42,12 +42,12 @@ a:hover {
 }
 
 #welcome {
-    color:magenta;
+    color:orange;
 }
 
 #top-logo {
     border-color:pink;
-    border: 5px solid #ff0000;
+    border: 5px solid orange;
 }
 
 #middle {
