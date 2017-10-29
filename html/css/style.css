@@ -1,9 +1,9 @@
-
 body
 {
     background: url(../img/background.jpeg);
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    font-family: Georgia;
 }
 
 a:link {
@@ -60,3 +60,5 @@ a:hover {
 #bottom {
     font-size: 12 px;
 }
+
+document.body.style.zoom="70%"
